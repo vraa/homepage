@@ -12,7 +12,7 @@
             *{margin:0;padding:0;}
             body{font:1em "Bree Serif", Georgia, serif;color:#888;background-image:url(img/ptrn.png);}
             .wrapper{width:700px;margin:50px auto;text-align:center;overflow: hidden;}
-            .hero{overflow: hidden;width:50%;margin-bottom:100px!important;}
+            .hero{overflow: hidden;width:50%;margin-bottom:70px!important;}
             .wrapper > section{margin:0 auto 40px auto;}
             .hero .punch{float:left;text-align:left;}
             .hero .photo{float: left;margin-right:20px;border-radius:50px;}
@@ -58,12 +58,18 @@
                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
                    background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
             }
-            .links li{display:inline-block;margin:0 20px;}
+            .links li{
+                display:inline-block;
+                margin:0 20px;
+            }
+            .links li:hover img{
+                -webkit-transform:rotate(20deg);
+            }
             .links a{text-decoration:none;text-align:center;display:inline-block;font-size:.7em;color:#777;}
             .links a:hover, .links a:focus{color:#000;}
-            .links a img{border:none;display:block;}
-            .footer{font-size:.8em;color:#888;}
-            .footer a{color:#777;text-decoration:none;border-bottom:1px dotted;}
+            .links a img{border:none;display:block;margin:0 auto 10px auto;}
+            footer{margin-top:10px;font-size:.8em;color:#888;}
+            footer a{color:#777;text-decoration:none;border-bottom:1px dotted;}
         </style>
 
     </head>
@@ -86,15 +92,21 @@
                 <ul class="links">
                     <li>
                         <a href="http://www.timethetask.com" target="_blank">
-                            <img src="img/tasks.png" alt="time the task" title="Time the task" height="48" width="48"/>&nbsp;</a>
+                            <img src="img/tasks.png" alt="time the task" title="Time the task" height="48" width="48"/>&nbsp; Timethetask
+                        </a>
                     </li>
                     <li>
+                        <a href="http://timelinebuilder.appspot.com/" target="_blank">
+                            <img src="img/timelinr.png" alt="Timeline builder" title="Timeline builder" height="48" width="48">&nbsp;Timelinr
+                        </a>
+                    </li>   
+                    <li>
                         <a href="http://twikural.veerasundar.com" target="_blank">
-                            <img src="img/valluvar.jpg" alt="Twikural" title="Twikural" height="48" width="48"/>&nbsp;</a>
+                            <img src="img/valluvar.jpg" alt="Twikural" title="Twikural" height="48" width="48"/>&nbsp;Twikural</a>
                     </li>
                     <li>
                         <a href="http://veerasundar.com/rock-paper-scissors/" target="_blank">
-                            <img src="img/game.png" alt="Rock Paper Scissor" title="Rock Paper Scissor" height="48" width="48"/>&nbsp;</a>
+                            <img src="img/game.png" alt="Rock Paper Scissor" title="Rock Paper Scissor" height="48" width="48"/>&nbsp;RPS Game</a>
                     </li>
                 </ul>
             </section>
@@ -138,9 +150,9 @@
                         </a>
                     </li>
                 </ul>
-            </div>
-            <div class="footer">
-                Fork this website @ <a href="https://github.com/vraa/homepage">github</a>
+                <footer>
+                    Fork this website @ <a href="https://github.com/vraa/homepage">github</a>
+                </footer>
             </div>
         </section>
 
