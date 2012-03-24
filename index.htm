@@ -11,13 +11,14 @@
         <style type="text/css">
             *{margin:0;padding:0;}
             body{font:1em "Bree Serif", Georgia, serif;color:#888;background-image:url(img/ptrn.png);}
-            .wrapper{width:700px;margin:50px auto;text-align:center;}
-            h1{color:#333;font-size:2.2em;margin:10px 0;font-weight:normal;text-shadow:#fff 0px 1px 0, #000 0 -1px 0;}
-            h2{color:#666;font-size:1em;margin:10px 0;}
-            .email, .location{font-weight:normal;font-size:1em;margin:20px 0;color:#666;padding-left:20px;display:inline-block;background-repeat:no-repeat;}
-            .email{background-image:url(img/email.png);}
-            .location{background-image:url(img/placemark.png);}
-            .pill-title{
+            .wrapper{width:700px;margin:50px auto;text-align:center;overflow: hidden;}
+            .hero{overflow: hidden;width:50%;margin-bottom:100px!important;}
+            .wrapper > section{margin:0 auto 40px auto;}
+            .hero .punch{float:left;text-align:left;}
+            .hero .photo{float: left;margin-right:20px;border-radius:50px;}
+            h1{color:#333;font-size:2.2em;margin:0 0 10px 0;font-weight:normal;text-shadow:#fff 0px 1px 0, #000 0 -1px 0;}
+            h2{color:#666;font-size:1em;margin:0 0 10px 0;}
+            a.contact{
                 color:#fff;
                 background: #ff3019; /* Old browsers */
                 background: -moz-linear-gradient(top,  #ff3019 0%, #cf0404 100%); /* FF3.6+ */
@@ -27,12 +28,16 @@
                 background: -ms-linear-gradient(top,  #ff3019 0%,#cf0404 100%); /* IE10+ */
                 background: linear-gradient(top,  #ff3019 0%,#cf0404 100%); /* W3C */
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=0 ); /* IE6-9 */
-
+                display:inline-block;
+                border-radius:10px;
+                padding:5px 20px;
+                text-decoration:none;
+            }
+            .pill-title{
+                color: #fff;
                 display:inline-block;
                 border-radius:10px 10px 0 0;
                 padding:5px 20px;
-            }
-            .pill-title.projects{
                 background: #499bea; /* Old browsers */
                 background: -moz-linear-gradient(top,  #499bea 0%, #207ce5 100%); /* FF3.6+ */
                 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#499bea), color-stop(100%,#207ce5)); /* Chrome,Safari4+ */
@@ -43,7 +48,7 @@
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=0 ); /* IE6-9 */
 
             }
-            .links{list-style:none;margin:0 0 20px 0;padding:20px;display:inline-block;border-radius:50px;box-shadow:0 0 5px #999;
+            .links{list-style:none;padding:20px;display:inline-block;border-radius:50px;box-shadow:0 0 5px #999;
                    background-color:#eee;
                    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
@@ -67,12 +72,16 @@
 
 
         <div class="wrapper">
-            <h1>Veera Sundar</h1>
-            <h2>Java developer / Web designer</h2>
-            <p class="email">veera.k.sundar@gmail.com</p>
-            <p class="location">Chennai, India.</p>
-            <div>
-                <p class='pill-title projects'>My Projects</p>
+            <section class='hero'>
+                <img src="http://veerasundar.com/blog/wp-content/uploads/2012/03/vraa2012.jpg" width="100" class="photo" />
+                <div class='punch'>
+                    <h1>Veera Sundar</h1>
+                    <h2>Java developer / Web designer</h2>
+                    <a class='contact' href="mailto:veera.k.sundar@gmail.com">Contact me!</a>
+                </div>
+            </section>
+            <section class='projects'>
+                <p class='pill-title'>My Projects</p>
                 <br/>
                 <ul class="links">
                     <li>
@@ -88,8 +97,8 @@
                             <img src="img/game.png" alt="Rock Paper Scissor" title="Rock Paper Scissor" height="48" width="48"/>&nbsp;</a>
                     </li>
                 </ul>
-            </div>
-            <div>
+            </section>
+            <section class='connect'>
                 <p class='pill-title'>Connect with me</p>
                 <br/>
                 <ul class="links">
@@ -133,7 +142,7 @@
             <div class="footer">
                 Fork this website @ <a href="https://github.com/vraa/homepage">github</a>
             </div>
-        </div>
+        </section>
 
         <!--Google analytics -->
         <script type="text/javascript">
