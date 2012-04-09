@@ -57,6 +57,7 @@
                 -webkit-font-smoothing: antialiased;
             }
             .pill-title{
+                font-weight:normal;
                 color: #fff;
                 display:inline-block;
                 border-radius:10px 10px 0 0;
@@ -71,7 +72,7 @@
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=0 ); /* IE6-9 */
 
             }
-            .links{list-style:none;padding:20px;display:inline-block;border-radius:50px;box-shadow:0 0 5px #999;
+            .links, .container{list-style:none;padding:20px;display:inline-block;border-radius:50px;box-shadow:0 0 5px #999;
                    background-color:#eee;
                    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
@@ -93,13 +94,57 @@
             .links a img{border:none;display:block;margin:0 auto 10px auto;}
             footer{margin-top:10px;font-size:.8em;color:#888;}
             footer a{color:#777;text-decoration:none;border-bottom:1px dotted;}
+
+            .skills{
+
+            }
+                .skills .container{
+                    padding:0 10px 10px 10px;
+                }
+                .skills h5{
+                    display: inline-block;
+                    background-color:#eee;
+                    margin:0 0 20px 0!important;
+                    padding: 5px 20px;
+                    font-weight:normal;
+                    color: #fff;
+                    background: #499bea; /* Old browsers */
+                    background: -moz-linear-gradient(top,  #499bea 0%, #207ce5 100%); /* FF3.6+ */
+                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#499bea), color-stop(100%,#207ce5)); /* Chrome,Safari4+ */
+                    background: -webkit-linear-gradient(top,  #499bea 0%,#207ce5 100%); /* Chrome10+,Safari5.1+ */
+                    background: -o-linear-gradient(top,  #499bea 0%,#207ce5 100%); /* Opera 11.10+ */
+                    background: -ms-linear-gradient(top,  #499bea 0%,#207ce5 100%); /* IE10+ */
+                    background: linear-gradient(top,  #499bea 0%,#207ce5 100%); /* W3C */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=0 ); /* IE6-9 */
+
+                }
+                    .server h5{
+                        border-radius:0 0 5px 50px;
+                    }
+                    .client h5{
+                        border-radius:0 0 50px 5px;
+                    }
+                .skills ul li{
+                    font-size:.8em;
+                    display: inline-block;
+                    margin:2px;
+                    padding:3px 10px;
+                    background-color:#eee;
+                    border:1px solid #ddd;
+                    border-radius:15px;
+                }
+                .skills article.server{
+                    float:left;
+                    width:45%;
+                }
+                .skills article.client{
+                    float: right;
+                    width:45% ;
+                }
         </style>
 
     </head>
-
     <body>
-
-
         <div class="wrapper">
             <section class='hero'>
                 <img src="http://veerasundar.com/blog/wp-content/uploads/2012/03/vraa2012.jpg" width="100" class="photo" />
@@ -109,8 +154,46 @@
                     <a class='contact' href="mailto:veera.k.sundar@gmail.com">Contact me!</a> &nbsp; <a class='blog-read' href="http://veerasundar.com/blog">Read my blog</a>
                 </div>
             </section>
+            <section class='skills'>
+                <h3 class='pill-title'>Skill set</h3>
+                <br/>
+                <div class='container'>
+                    <article class='server'>
+                        <h5>Server</h5>
+                        <ul>
+                            <li>Java</li>
+                            <li>JSP</li>
+                            <li>Servlet</li>
+                            <li>Struts 2</li>
+                            <li>Spring core</li>
+                            <li>AOP</li>
+                            <li>App Engine</li>
+                            <li>Log4j</li>
+                            <li>JUnit</li>
+                            <li>Ant</li>
+                            <li>Maven</li>
+                            <li>Git</li>
+                            <li>Play Framework</li>
+                            <li>Android</li>
+                        </ul>
+                    </article>
+                    <article class='client'>
+                        <h5>Client</h5>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>JQuery</li>
+                            <li>AJAX</li>
+                            <li>CoffeeScript</li>
+                            <li>Backbone.js</li>
+                            <li>LESS</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
             <section class='projects'>
-                <p class='pill-title'>My Projects</p>
+                <h3 class='pill-title'>My Projects</h3>
                 <br/>
                 <ul class="links">
                     <li>
@@ -134,7 +217,7 @@
                 </ul>
             </section>
             <section class='connect'>
-                <p class='pill-title'>Connect with me</p>
+                <h3 class='pill-title'>Connect with me</h3>
                 <br/>
                 <ul class="links">
                     <li>
