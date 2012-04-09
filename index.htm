@@ -12,12 +12,18 @@
             *{margin:0;padding:0;}
             body{font:1em "Bree Serif", Georgia, serif;color:#888;background-image:url(img/ptrn.png);}
             .wrapper{width:700px;margin:50px auto;text-align:center;overflow: hidden;}
-            .hero{overflow: hidden;width:55%;margin-bottom:70px!important;}
+            .hero{overflow: hidden;width:65%;margin-bottom:70px!important;}
             .wrapper > section{margin:0 auto 40px auto;}
             .hero .punch{float:left;text-align:left;}
             .hero .photo{float: left;margin-right:20px;border-radius:50px;}
             h1{color:#333;font-size:2.2em;margin:0 0 10px 0;font-weight:normal;text-shadow:#fff 0px 1px 0, #000 0 -1px 0;}
-            h2{color:#666;font-size:1em;margin:0 0 10px 0;}
+            h2{color:#666;font-size:1em;margin:0 0 20px 0;}
+            .hero a{
+                display:inline-block;
+                border-radius:10px;
+                padding:5px 20px;
+                text-decoration:none;
+            }
             a.contact{
                 color:#fff;
                 background: #ff3019; /* Old browsers */
@@ -28,10 +34,22 @@
                 background: -ms-linear-gradient(top,  #ff3019 0%,#cf0404 100%); /* IE10+ */
                 background: linear-gradient(top,  #ff3019 0%,#cf0404 100%); /* W3C */
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=0 ); /* IE6-9 */
-                display:inline-block;
-                border-radius:10px;
-                padding:5px 20px;
-                text-decoration:none;
+            }
+            a.blog-read{
+                background-color: hsl(86, 79%, 44%) !important;
+                background-repeat: repeat-x;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#daf6b5", endColorstr="#7cc817");
+                background-image: -khtml-gradient(linear, left top, left bottom, from(#daf6b5), to(#7cc817));
+                background-image: -moz-linear-gradient(top, #daf6b5, #7cc817);
+                background-image: -ms-linear-gradient(top, #daf6b5, #7cc817);
+                background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #daf6b5), color-stop(100%, #7cc817));
+                background-image: -webkit-linear-gradient(top, #daf6b5, #7cc817);
+                background-image: -o-linear-gradient(top, #daf6b5, #7cc817);
+                background-image: linear-gradient(#daf6b5, #7cc817);
+                border-color: #7cc817 #7cc817 hsl(86, 79%, 34%);
+                color: #333 !important;
+                text-shadow: 0 1px 1px rgba(255, 255, 255, 0.66);
+                -webkit-font-smoothing: antialiased;
             }
             .pill-title{
                 color: #fff;
@@ -83,7 +101,7 @@
                 <div class='punch'>
                     <h1>Veera Sundar</h1>
                     <h2>Java developer / Web designer</h2>
-                    <a class='contact' href="mailto:veera.k.sundar@gmail.com">Contact me!</a>
+                    <a class='contact' href="mailto:veera.k.sundar@gmail.com">Contact me!</a> &nbsp; <a class='blog-read' href="http://veerasundar.com/blog">Read my blog</a>
                 </div>
             </section>
             <section class='projects'>
