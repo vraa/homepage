@@ -7,6 +7,6 @@
 
 		var barSpark = $('<span>').addClass('spark').attr('title', 'Skill level : ' + rating + ' (out of 5)');
 		$(item).append(barSpark);
-		barSpark.sparkline(bars, {type:'tristate', posBarColor:'red'});
+		barSpark.sparkline(bars, {type:'tristate', colorMap:['#6f6','#6f6','green','green','red']});
 	});
 })(jQuery);
