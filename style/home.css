@@ -132,14 +132,4 @@ footer a{color:#777;text-decoration:none;border-bottom:1px dotted;}
     }
     .skills .spark{
         margin:8px 0 0 10px;
-        opacity:.1;
-        -webkit-transition:opacity .5s ease-in-out;
-        -moz-transition:opacity .5s ease-in-out;
-        transition:opacity .5s ease-in-out;
     }
-        .skills:hover .spark{
-            -webkit-transition:opacity .5s ease-in-out;
-            -moz-transition:opacity .5s ease-in-out;
-            transition:opacity .5s ease-in-out;
-            opacity:.8;
-        }
