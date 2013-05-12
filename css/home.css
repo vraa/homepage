@@ -86,14 +86,22 @@ header{
 .contact{
 
 }
-  .contact .icon-twitter{
-    color: #4099ff;
+  .contact a{
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding-left: 30px;
   }
-  .contact .icon-github{
-    color: #000;
+  .contact a.email{
+    background-image:url(http://www.google.com/s2/u/0/favicons?domain=gmail.com);
   }
-  .contact .icon-envelope{
-    color: orange;
+  .contact a.twitter{
+    background-image:url(http://www.google.com/s2/u/0/favicons?domain=twitter.com); 
+  }
+  .contact a.bitbucket{
+    background-image:url(http://www.google.com/s2/u/0/favicons?domain=bitbucket.org);
+  }
+  .contact a.github{
+    background-image:url(http://www.google.com/s2/u/0/favicons?domain=github.com);
   }
 
 footer{
