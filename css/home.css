@@ -59,6 +59,10 @@ header{
 .about{
 
 }
+  .about li a i{
+    margin-right: 5px;
+    display: inline-block;
+  }
   .about .icon-edit{
     color: #000;
   }
@@ -71,17 +75,9 @@ header{
 .projects{
 
   }
-  .projects .red{
-    color: #f00;
-  }
-  .projects .green{
-    color: #0f0;
-  }
-  .projects .blue{
-    color: #00f;
-  }
-  .projects .yellow{
-    color: #ff0;
+  .projects li a i{
+    margin-right: 5px;
+    display: inline-block;
   }
 .contact{
 
