@@ -4,16 +4,20 @@
   padding-top: 5rem;
 }
 
-header{
-  overflow: hidden;
-  font-size: 2rem;
+.container > .row{
   background-color: #fff;
-  padding: 2rem 0;
+  padding: 2rem;
   border-radius: 5px;
   border: 1px solid #eaeaea;
+  overflow: hidden;
+  margin: 2rem 0;
+}
+
+header{
+  font-size: 2rem;
 }
   header h1{
-    font: 4rem 'Trebuchet MS';
+    font-size: 4rem;
     margin-top: 10px;
   }
   .intro{
@@ -40,3 +44,50 @@ header{
       .links a span{
         display: block;
       }
+.projects{
+
+}
+  .projects h2{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+    .projects h3 a:link, .projects h3 a:hover, .projects h3 a:visited, .projects h3 a:active{
+      color: #ecf0f1;
+      border-bottom: 1px dashed;
+    }
+    .projects h3 a:hover{
+      text-decoration: none;
+    }
+  .projects .project{
+    margin-bottom: 2rem;
+  }
+    .projects .project:last-child{
+      border-bottom: none;
+    }
+    .projects .project .description{
+      border: 1px solid #16a085;
+      background-color: #1abc9c;
+      color: #fff;
+      border-radius: 5px;
+    }
+    .projects .project:nth-child(odd) .arrow{
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-width: 10px;
+      border-color: transparent transparent transparent #16a085;
+      border-style: solid;
+      top: 50%;
+      right:-20px;
+    }
+    .projects .project:nth-child(even) .arrow{
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-width: 10px;
+      border-color: transparent #16a085 transparent transparent;
+      border-style: solid;
+      top: 50%;
+      left:-20px;
+    }
