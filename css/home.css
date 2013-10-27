@@ -1,112 +1,42 @@
 .site{
-  color: #333;
-  font-family: 'PT Serif', serif;
-}
-
-.card{
-  margin-top: 5em;
+  font-family: 'Trebuchet MS';
+  background:#fff url(../img/brickwall.png);
+  padding-top: 5rem;
 }
 
 header{
-  color: #666;
-  background-color: #C6F0F2;
-  border-radius: 1em 1em 0 0;
+  overflow: hidden;
+  font-size: 2rem;
+  background-color: #fff;
+  padding: 2rem 0;
+  border-radius: 5px;
+  border: 1px solid #eaeaea;
 }
-  @media (max-width: 480px) {
-    header{
-      background-color: #fff;
-      border-bottom:none;
-    }
+  header h1{
+    font: 4rem 'Trebuchet MS';
+    margin-top: 10px;
   }
-  header > div{
-    padding:1em 0;
+  .intro{
+    text-align: right;
   }
-
-  .photo{
-    text-align: center;
+  .image img{
+    border-radius: 1rem;
+    margin-top: 1rem;
   }
-    .photo .location{
-      margin-top:1em;
-    }
-    .photo img{
-      border-radius: 1em;
-      margin-top: -3em;
-      border-top: 10px solid #B2DCDE;
-      border-bottom: 10px solid #B2DCDE;
-    }
-
-.details h2{
-  font-size: 2em;
-  color: #000;
-}
-  .details a{
-    color: #333;
-    border-bottom: 1px dotted;
-  }
-    .details a:hover{
-      text-decoration: none;
-      border-bottom-style: solid;
-      color: #00f;
-    }
-  .details ol{
-    margin-top: 2em;
+  .links{
     list-style: none;
   }
-    .details ol li{
-      margin:1em 0;
+    .links li{
+      display: inline-block;
+      margin: 3rem 2rem;
     }
-  .details p{
-    line-height: 1.5em;
-  }
-  .details > div{
-    margin-left: 0;
-    padding-left: 30px;
-  }
-.about{
-  border-top: 5px solid #2ecc71;
-}
-  .about li a i{
-    margin-right: 5px;
-    display: inline-block;
-  }
-  .about .icon-edit{
-    color: #000;
-  }
-  .about .icon-thumbs-up{
-    color: #3B5998;
-  }
-  .about .icon-linkedin{
-    color: #4875B4;
-  }
-.projects{
-  border-top: 5px solid #3498db;
-}
-  .projects li a i{
-    margin-right: 5px;
-    display: inline-block;
-  }
-.contact{
-  border-top: 5px solid #9b59b6;
-}
-  .contact a{
-    background-repeat: no-repeat;
-    background-position: center left;
-    padding-left: 30px;
-  }
-  .contact a.email{
-    background-image:url(http://www.google.com/s2/u/0/favicons?domain=gmail.com);
-  }
-  .contact a.twitter{
-    background-image:url(http://www.google.com/s2/u/0/favicons?domain=twitter.com); 
-  }
-  .contact a.bitbucket{
-    background-image:url(http://www.google.com/s2/u/0/favicons?domain=bitbucket.org);
-  }
-  .contact a.github{
-    background-image:url(http://www.google.com/s2/u/0/favicons?domain=github.com);
-  }
-
-footer{
-  font-size: .8em;
-  margin-top:2em;
-}
+    .links a{
+      text-align: center;
+      border-bottom: 1px dashed;
+    }
+      .links a:hover{
+        text-decoration: none;
+      }
+      .links a span{
+        display: block;
+      }
