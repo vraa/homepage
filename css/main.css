@@ -94,3 +94,5 @@ article.work {
           font-size: 1.4rem; }
       article.work ol li:last-child {
         border-right: none; }
+      article.work ol li a {
+        font-size: 1rem; }
