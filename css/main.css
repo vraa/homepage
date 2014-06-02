@@ -55,8 +55,9 @@ header {
       margin: 15px 0; }
 
 .wrapper {
-  width: 760px;
-  margin: 0 auto; }
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 10px; }
 
 article.work {
   color: #666;
@@ -71,28 +72,33 @@ article.work {
     font: 1.8rem "Source Sans Pro Light", Consolas, "Trebuchet MS", Sans;
     color: #3d3d3d; }
   article.work img {
-    max-width: 100%; }
+    max-width: 100%;
+    border-radius: 20px 0 20px 0; }
   article.work ol {
     list-style: none;
     overflow: hidden; }
     article.work ol li {
-      float: left;
-      width: 25%;
-      padding: 0 30px;
-      border-right: 1px solid #ededed; }
+      display: block; }
       article.work ol li p {
         font-size: 1.1rem; }
-      article.work ol li.featured {
-        width: 100%;
-        float: none;
-        display: block;
-        margin: 0;
-        border-bottom: 1px solid #ededed;
-        padding: 20px 0;
-        border-right: none; }
-        article.work ol li.featured p {
-          font-size: 1.4rem; }
-      article.work ol li:last-child {
-        border-right: none; }
       article.work ol li a {
         font-size: 1rem; }
+
+@media (min-width: 760px) {
+  article.work ol li {
+    float: left;
+    width: 25%;
+    padding: 0 30px;
+    border-right: 1px solid #ededed; }
+    article.work ol li.featured {
+      width: 100%;
+      float: none;
+      display: block;
+      margin: 0;
+      border-bottom: 1px solid #ededed;
+      padding: 20px 0;
+      border-right: none; }
+      article.work ol li.featured p {
+        font-size: 1.4rem; }
+    article.work ol li:last-child {
+      border-right: none; } }

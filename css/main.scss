@@ -67,8 +67,9 @@ header{
 }
 
 .wrapper{
-	width: 760px;
+	max-width: 760px;
 	margin: 0 auto;
+	padding: 0 10px;
 }
 
 article.work{
@@ -87,34 +88,17 @@ article.work{
 	}
 	img{
 		max-width: 100%;
+		border-radius: 20px 0 20px 0;
 	}
 	ol{
 		list-style: none;
 		overflow: hidden;
 		li{
-			float: left;
-			width: 25%;
-			padding: 0 30px;
-			border-right: 1px solid #ededed;
+			display: block;
 			p{
 				font-size: 1.1rem;
 			}
-			&.featured{
-				width: 100%;
-				float: none;
-				display: block;
-				margin: 0;
-				border-bottom: 1px solid #ededed;
-				padding:20px 0;
-				border-right: none;
-				p{
-					font-size: 1.4rem;
-				}
-			}
-			&:last-child{
-				border-right: none;
-			}
-
+			
 			a{
 				font-size: 1rem;
 			}
@@ -123,4 +107,32 @@ article.work{
 }
 
 article.projects{
+}
+
+@media (min-width: 760px) {
+	article.work{
+		ol{
+			li{
+				float: left;
+				width: 25%;
+				padding: 0 30px;
+				border-right: 1px solid #ededed;
+				&.featured{
+					width: 100%;
+					float: none;
+					display: block;
+					margin: 0;
+					border-bottom: 1px solid #ededed;
+					padding:20px 0;
+					border-right: none;
+					p{
+						font-size: 1.4rem;
+					}
+				}
+				&:last-child{
+					border-right: none;
+				}
+			}
+		}
+	}
 }
