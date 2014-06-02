@@ -84,6 +84,13 @@ article.work {
       article.work ol li a {
         font-size: 1rem; }
 
+footer {
+  background-color: #000;
+  color: #999;
+  padding: 10px 0;
+  margin: 10px 0 0 0;
+  font: 0.9rem "Source Sans Pro Light", Consolas, "Trebuchet MS", Sans; }
+
 @media (min-width: 760px) {
   article.work ol li {
     float: left;

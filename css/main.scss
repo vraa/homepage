@@ -106,7 +106,12 @@ article.work{
 	}
 }
 
-article.projects{
+footer{
+	background-color: #000;
+	color: #999;
+	padding: 10px 0;
+	margin: 10px 0 0 0;
+	font: .9rem $font-light;
 }
 
 @media (min-width: 760px) {
