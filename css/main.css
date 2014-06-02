@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("../font/sourcesanspro/EOT/SourceSansPro-Regular.eot");
+  src: url("../font/sourcesanspro/EOT/SourceSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("../font/sourcesanspro/WOFF/OTF/SourceSansPro-Regular.otf.woff") format("woff"), url("../font/sourcesanspro/WOFF/TTF/SourceSansPro-Regular.ttf.woff") format("truetype"), url("../font/sourcesanspro/SVG/SourceSansPro-Regular.svg#webfont") format("svg"); }
+
+@font-face {
+  font-family: 'Source Sans Pro Light';
+  src: url("../font/sourcesanspro/EOT/SourceSansPro-Light.eot");
+  src: url("../font/sourcesanspro/EOT/SourceSansPro-Light.eot?#iefix") format("embedded-opentype"), url("../font/sourcesanspro/WOFF/OTF/SourceSansPro-Light.otf.woff") format("woff"), url("../font/sourcesanspro/WOFF/TTF/SourceSansPro-Light.ttf.woff") format("truetype"), url("../font/sourcesanspro/SVG/SourceSansPro-Light.svg#webfont") format("svg"); }
+
+.site {
+  background-color: #fff;
+  font: 1em "Source Sans Pro", Consolas, "Trebuchet Ms";
+  font-weight: 300;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */ }
+
+ol, ul {
+  margin: 0;
+  padding: 0; }
+  ol li, ul li {
+    margin: 0;
+    padding: 0; }
+
+header {
+  text-align: center;
+  padding: 25px 0;
+  color: #ddd;
+  background: #3d3d3d;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #3d3d3d 0%, black 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #3d3d3d), color-stop(100%, black));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #3d3d3d 0%, black 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #3d3d3d 0%, black 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #3d3d3d 0%, black 100%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, #3d3d3d 0%, black 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d3d3d', endColorstr='#000000',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+  header h1 {
+    font-size: 2rem;
+    color: #fff; }
+  header .summary {
+    font: 1.1rem "Source Sans Pro Light", Consolas, "Trebuchet MS", Sans;
+    color: #ccc;
+    list-style: none; }
+    header .summary li {
+      margin: 15px 0; }
+
+.wrapper {
+  width: 760px;
+  margin: 0 auto; }
+
+article.work {
+  color: #999;
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 100px 0; }
+  article.work h2 {
+    font: 2.5rem "Source Sans Pro Light", Consolas, "Trebuchet MS", Sans;
+    color: #3d3d3d;
+    text-transform: uppercase; }
+  article.work h3 {
+    font: 1.8rem "Source Sans Pro Light", Consolas, "Trebuchet MS", Sans;
+    color: #3d3d3d; }
+  article.work img {
+    max-width: 100%; }
+  article.work ol {
+    list-style: none;
+    overflow: hidden; }
+    article.work ol li {
+      float: left;
+      width: 25%;
+      margin: 0 30px; }
+      article.work ol li.featured {
+        width: 100%;
+        float: none;
+        display: block;
+        margin: 0; }
