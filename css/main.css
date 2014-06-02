@@ -2,12 +2,10 @@
   font-family: 'Source Sans Pro';
   src: url("../font/sourcesanspro/EOT/SourceSansPro-Regular.eot");
   src: url("../font/sourcesanspro/EOT/SourceSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("../font/sourcesanspro/WOFF/OTF/SourceSansPro-Regular.otf.woff") format("woff"), url("../font/sourcesanspro/WOFF/TTF/SourceSansPro-Regular.ttf.woff") format("truetype"), url("../font/sourcesanspro/SVG/SourceSansPro-Regular.svg#webfont") format("svg"); }
-
 @font-face {
   font-family: 'Source Sans Pro Light';
   src: url("../font/sourcesanspro/EOT/SourceSansPro-Light.eot");
   src: url("../font/sourcesanspro/EOT/SourceSansPro-Light.eot?#iefix") format("embedded-opentype"), url("../font/sourcesanspro/WOFF/OTF/SourceSansPro-Light.otf.woff") format("woff"), url("../font/sourcesanspro/WOFF/TTF/SourceSansPro-Light.ttf.woff") format("truetype"), url("../font/sourcesanspro/SVG/SourceSansPro-Light.svg#webfont") format("svg"); }
-
 .site {
   background-color: #fff;
   font: 1em "Source Sans Pro", Consolas, "Trebuchet Ms";
@@ -61,8 +59,8 @@ header {
   margin: 0 auto; }
 
 article.work {
-  color: #999;
-  font-size: 1.4rem;
+  color: #666;
+  font: 1.4rem "Source Sans Pro Light", Consolas, "Trebuchet MS", Sans;
   text-align: center;
   margin: 100px 0; }
   article.work h2 {
@@ -80,9 +78,19 @@ article.work {
     article.work ol li {
       float: left;
       width: 25%;
-      margin: 0 30px; }
+      padding: 0 30px;
+      border-right: 1px solid #ededed; }
+      article.work ol li p {
+        font-size: 1.1rem; }
       article.work ol li.featured {
         width: 100%;
         float: none;
         display: block;
-        margin: 0; }
+        margin: 0;
+        border-bottom: 1px solid #ededed;
+        padding: 20px 0;
+        border-right: none; }
+        article.work ol li.featured p {
+          font-size: 1.4rem; }
+      article.work ol li:last-child {
+        border-right: none; }

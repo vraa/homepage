@@ -17,6 +17,7 @@
 
 $font : 'Source Sans Pro', Consolas, 'Trebuchet Ms';
 $font-light: 'Source Sans Pro Light', Consolas, 'Trebuchet MS', Sans;
+$line-color:#ededed;
 
 .site{
 	background-color: #fff;
@@ -71,8 +72,8 @@ header{
 }
 
 article.work{
-	color: #999;
-	font-size: 1.4rem;
+	color: #666;
+	font: 1.4rem $font-light;
 	text-align: center;
 	margin: 100px 0;
 	h2{
@@ -93,12 +94,25 @@ article.work{
 		li{
 			float: left;
 			width: 25%;
-			margin: 0 30px;
+			padding: 0 30px;
+			border-right: 1px solid #ededed;
+			p{
+				font-size: 1.1rem;
+			}
 			&.featured{
 				width: 100%;
 				float: none;
 				display: block;
 				margin: 0;
+				border-bottom: 1px solid #ededed;
+				padding:20px 0;
+				border-right: none;
+				p{
+					font-size: 1.4rem;
+				}
+			}
+			&:last-child{
+				border-right: none;
 			}
 		}
 	}
