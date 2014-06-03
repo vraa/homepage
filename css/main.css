@@ -6,6 +6,42 @@
   font-family: 'Source Sans Pro Light';
   src: url("../font/sourcesanspro/EOT/SourceSansPro-Light.eot");
   src: url("../font/sourcesanspro/EOT/SourceSansPro-Light.eot?#iefix") format("embedded-opentype"), url("../font/sourcesanspro/WOFF/OTF/SourceSansPro-Light.otf.woff") format("woff"), url("../font/sourcesanspro/WOFF/TTF/SourceSansPro-Light.ttf.woff") format("truetype"), url("../font/sourcesanspro/SVG/SourceSansPro-Light.svg#webfont") format("svg"); }
+@font-face {
+  font-family: 'icomoon';
+  src: url("../font/icomoon/icomoon.eot?-uc5hhu");
+  src: url("../font/icomoon/icomoon.eot?#iefix-uc5hhu") format("embedded-opentype"), url("../font/icomoon/icomoon.woff?-uc5hhu") format("woff"), url("../font/icomoon/icomoon.ttf?-uc5hhu") format("truetype"), url("../font/icomoon/icomoon.svg?-uc5hhu#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-blog:before {
+  content: "\e601"; }
+
+.icon-email:before {
+  content: "\e602"; }
+
+.icon-twitter:before {
+  content: "\e603"; }
+
+.icon-github:before {
+  content: "\e600"; }
+
+.icon-linkedin:before {
+  content: "\e604"; }
+
+.icon-resume:before {
+  content: "\e605"; }
+
 .site {
   background-color: #fff;
   font: 1em "Source Sans Pro", Consolas, "Trebuchet Ms";
@@ -23,6 +59,25 @@ ol, ul {
   ol li, ul li {
     margin: 0;
     padding: 0; }
+
+ul.elsewhere {
+  list-style: none;
+  padding: 20px 0; }
+  ul.elsewhere li {
+    display: inline-block;
+    margin: 20px; }
+    ul.elsewhere li a {
+      text-align: center; }
+      ul.elsewhere li a:link, ul.elsewhere li a:visited, ul.elsewhere li a:active {
+        color: #aaa;
+        text-decoration: none; }
+      ul.elsewhere li a:hover {
+        color: #fff;
+        text-shadow: 0 0 5px #000; }
+      ul.elsewhere li a span {
+        display: block;
+        font-size: 2rem;
+        padding: 10px 0; }
 
 header {
   text-align: center;
@@ -51,8 +106,15 @@ header {
     font: 1.1rem "Source Sans Pro Light", Consolas, "Trebuchet MS", Sans;
     color: #ccc;
     list-style: none; }
-    header .summary li {
-      margin: 15px 0; }
+    header .summary li:after {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 100px;
+      margin: 15px auto;
+      border-top: 1px dashed #444; }
+    header .summary li:last-child:after {
+      display: none; }
 
 .wrapper {
   max-width: 760px;

@@ -15,9 +15,54 @@
 	     url('../font/sourcesanspro/SVG/SourceSansPro-Light.svg#webfont') format('svg');
 }
 
+@font-face {
+	font-family: 'icomoon';
+	src:url('../font/icomoon/icomoon.eot?-uc5hhu');
+	src:url('../font/icomoon/icomoon.eot?#iefix-uc5hhu') format('embedded-opentype'),
+		url('../font/icomoon/icomoon.woff?-uc5hhu') format('woff'),
+		url('../font/icomoon/icomoon.ttf?-uc5hhu') format('truetype'),
+		url('../font/icomoon/icomoon.svg?-uc5hhu#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 $font : 'Source Sans Pro', Consolas, 'Trebuchet Ms';
 $font-light: 'Source Sans Pro Light', Consolas, 'Trebuchet MS', Sans;
 $line-color:#ededed;
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-blog:before {
+	content: "\e601";
+}
+.icon-email:before {
+	content: "\e602";
+}
+.icon-twitter:before {
+	content: "\e603";
+}
+.icon-github:before {
+	content: "\e600";
+}
+.icon-linkedin:before {
+	content: "\e604";
+}
+.icon-resume:before {
+	content: "\e605";
+}
+
 
 .site{
 	background-color: #fff;
@@ -34,6 +79,31 @@ ol, ul{
 	li{
 		margin: 0;
 		padding: 0;
+	}
+}
+
+ul.elsewhere{
+	list-style: none;
+	padding: 20px 0;
+	li{
+		display: inline-block;
+		margin: 20px;
+		a{
+			text-align: center;
+			&:link, &:visited, &:active{
+				color: #aaa;
+				text-decoration: none;
+			}
+			&:hover{
+				color: #fff;
+				text-shadow: 0 0 5px #000;
+			}
+			span{
+				display: block;
+				font-size: 2rem;
+				padding: 10px 0;
+			}
+		}
 	}
 }
 
@@ -61,7 +131,17 @@ header{
 		list-style: none;
 
 		li{
-			margin: 15px 0;
+			&:after{
+				content: '';
+				display: block;
+				height: 1px;
+				width: 100px;
+				margin: 15px auto;
+				border-top: 1px dashed #444;
+			}
+			&:last-child:after{
+				display: none;
+			}
 		}
 	}
 }
