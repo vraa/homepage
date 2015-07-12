@@ -1,3 +1,43 @@
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+@-webkit-keyframes rotateIn {
+  0% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1; } }
+@keyframes rotateIn {
+  0% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1; } }
+.rotateIn {
+  -webkit-animation-name: rotateIn;
+  animation-name: rotateIn; }
+
 @font-face {
   font-family: 'Source Sans Pro';
   src: url("../font/sourcesanspro/EOT/SourceSansPro-Regular.eot");
@@ -60,44 +100,25 @@ ol, ul {
     margin: 0;
     padding: 0; }
 
-ul.elsewhere {
-  list-style: none;
-  padding: 20px 0; }
-  ul.elsewhere li {
-    display: inline-block;
-    margin: 20px; }
-    ul.elsewhere li a {
-      text-align: center; }
-      ul.elsewhere li a:link, ul.elsewhere li a:visited, ul.elsewhere li a:active {
-        color: #aaa;
-        text-decoration: none; }
-      ul.elsewhere li a:hover {
-        color: #fff;
-        text-shadow: 0 0 5px #000; }
-      ul.elsewhere li a span {
-        display: block;
-        font-size: 2rem;
-        padding: 10px 0; }
-
 header {
   text-align: center;
   padding: 25px 0;
   color: #ddd;
   background: #3d3d3d;
   /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover, #3d3d3d 0%, black 100%);
+  background: -moz-radial-gradient(center, ellipse cover, #3d3d3d 0%, #000000 100%);
   /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #3d3d3d), color-stop(100%, black));
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #3d3d3d), color-stop(100%, #000000));
   /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover, #3d3d3d 0%, black 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, #3d3d3d 0%, #000000 100%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover, #3d3d3d 0%, black 100%);
+  background: -o-radial-gradient(center, ellipse cover, #3d3d3d 0%, #000000 100%);
   /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover, #3d3d3d 0%, black 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #3d3d3d 0%, #000000 100%);
   /* IE10+ */
-  background: radial-gradient(ellipse at center, #3d3d3d 0%, black 100%);
+  background: radial-gradient(ellipse at center, #3d3d3d 0%, #000000 100%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d3d3d', endColorstr='#000000',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d3d3d', endColorstr='#000000',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */ }
   header h1 {
     font-size: 2rem;
@@ -110,7 +131,7 @@ header {
       content: '';
       display: block;
       height: 1px;
-      width: 100px;
+      width: 20px;
       margin: 15px auto;
       border-top: 1px dashed #444; }
     header .summary li:last-child:after {
@@ -120,6 +141,26 @@ header {
   max-width: 760px;
   margin: 0 auto;
   padding: 0 10px; }
+
+ul.elsewhere {
+  list-style: none;
+  padding: 20px; }
+  ul.elsewhere li {
+    display: inline-block;
+    margin: 20px;
+    opacity: .1; }
+    ul.elsewhere li a {
+      text-align: center; }
+      ul.elsewhere li a:link, ul.elsewhere li a:visited, ul.elsewhere li a:active {
+        color: #aaaaaa;
+        text-decoration: none; }
+      ul.elsewhere li a:hover {
+        color: #fff;
+        text-shadow: 0 0 5px #455A64; }
+      ul.elsewhere li a span {
+        display: block;
+        font-size: 2rem;
+        padding: 10px 0; }
 
 article.work {
   color: #666;
@@ -134,8 +175,7 @@ article.work {
     font: 1.8rem "Source Sans Pro Light", Consolas, "Trebuchet MS", Sans;
     color: #3d3d3d; }
   article.work img {
-    max-width: 100%;
-    border-radius: 20px 0 20px 0; }
+    max-width: 100%; }
   article.work ol {
     list-style: none;
     overflow: hidden; }
@@ -171,3 +211,5 @@ footer {
         font-size: 1.4rem; }
     article.work ol li:last-child {
       border-right: none; } }
+
+/*# sourceMappingURL=main.css.map */
