@@ -92,15 +92,15 @@ ol, ul {
 header {
   text-align: center;
   padding: 25px 0;
-	color: #ddd;
-	background: #3d3d3d; /* Old browsers */
-	background: -moz-radial-gradient(center, ellipse cover,  #3d3d3d 0%, #000000 100%); /* FF3.6+ */
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#3d3d3d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
-	background: -webkit-radial-gradient(center, ellipse cover,  #3d3d3d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-radial-gradient(center, ellipse cover,  #3d3d3d 0%,#000000 100%); /* Opera 12+ */
-	background: -ms-radial-gradient(center, ellipse cover,  #3d3d3d 0%,#000000 100%); /* IE10+ */
-	background: radial-gradient(ellipse at center,  #3d3d3d 0%,#000000 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d3d3d', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  color: #ddd;
+  background: #3d3d3d; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #3d3d3d 0%, #000000 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #3d3d3d), color-stop(100%, #000000)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #3d3d3d 0%, #000000 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #3d3d3d 0%, #000000 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #3d3d3d 0%, #000000 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center, #3d3d3d 0%, #000000 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d3d3d', endColorstr='#000000', GradientType=1); /* IE6-9 fallback on horizontal gradient */
 
   h1 {
     font-size: 2rem;
@@ -109,7 +109,7 @@ header {
 
   .summary {
     font: 1.1rem $font-light;
-		color: #ccc;
+    color: #ccc;
     list-style: none;
 
     li {
@@ -119,10 +119,14 @@ header {
         height: 1px;
         width: 20px;
         margin: 15px auto;
-				border-top: 1px dashed #444;
+        border-top: 1px dashed #444;
       }
       &:last-child:after {
         display: none;
+      }
+      a {
+        color: #ccc;
+        text-decoration: none;
       }
     }
   }

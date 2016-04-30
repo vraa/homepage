@@ -118,7 +118,7 @@ header {
   /* IE10+ */
   background: radial-gradient(ellipse at center, #3d3d3d 0%, #000000 100%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d3d3d', endColorstr='#000000',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d3d3d', endColorstr='#000000', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */ }
   header h1 {
     font-size: 2rem;
@@ -136,6 +136,9 @@ header {
       border-top: 1px dashed #444; }
     header .summary li:last-child:after {
       display: none; }
+    header .summary li a {
+      color: #ccc;
+      text-decoration: none; }
 
 .wrapper {
   max-width: 760px;
