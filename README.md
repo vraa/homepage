@@ -1,6 +1,6 @@
 ##Hello,
 
-I am Veera. I am a JavaScript application developer. I currently work at **Visa** as Staff Software Engineer.
+I am Veera. I am a JavaScript developer. I currently work at **Visa** as Staff Software Engineer.
 
 I enjoy writing web applications using modern web technologies such as ES6, Node, CSS3. You can read more about skills in my [resume](http://veerasundar.com/resume).
 
